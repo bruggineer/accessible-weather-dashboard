@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <!-- set up responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap call  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jQuery & AJAX -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- BootStrap's jQuery calls -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>git 
+    <!-- local style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header class=>
+    <h1 class="title name">Weather Report</h1>
+</header>
+
+<body class="container">
+    <!-- create aside -->
+    <div class="row">
+        <div class="sidebar pull-left col-lg-2">
+            <!-- Display search box, submit icon, for user input form to get city -->
+            <form id="row" class="form">
+                <!-- Label for Text Box -->
+                <label for="city-input">Search for a City:</label>
+                <!-- Text Input Box -->
+                <div class="row" id="search-box">
+                    <input type="text" id="city-input" class="col-9">
+                    <button type="button" id="submitted-city" class="btn btn-light col-3">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            <div id="citSearch"></div>
+        </div>
+
+        <!-- HtmL framework for data from APIs -->
+        <div id="weather" class="pull-right col-lg-10">
+            <div class="city-current">
+                </br>
+                <div class="temp"></div>
+                </br>
+                <div class="humidity"></div>
+                </br>
+                <div class="wind"></div>
+                </br>
+                <div class="uvindex level"></div>
+                <br />
+            </div>
+            <br />
+            <div id="forecastTitle"></div>
+            <div id="forecast" class="container-md row"></div>
+        </div>
+    </div>
+
+
+    <!-- BootStrap's jQuery calls -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- local javascript file -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- glyphicons from FontAwesome -->
+    <script src="https://kit.fontawesome.com/94ceb15587.js" crossorigin="anonymous"></script>
+    <!-- Thanks to GeeksforGeeks for guidance on the date format- https://www.geeksforgeeks.org/how-to-get-current-formatted-date-dd-mm-yyyy-in-javascript/ -->
+</body>
+
+</html>
