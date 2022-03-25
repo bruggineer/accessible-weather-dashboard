@@ -1,4 +1,4 @@
-Deployed app- https://bruggineer.github.io/Weather-Dashboard/
+Deployed app- https://bruggineer.github.io/accessible-weather-dashboard/
 
 Responsive weather application that renders the current weather conditions as well as a five-day forecast based on user-input city. Cities searched for are stored and if clicked again, weather conditions are shown again for that city.
 
