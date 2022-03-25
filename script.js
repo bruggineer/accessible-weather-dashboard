@@ -3,7 +3,7 @@
 $(document).ready(function () {
     //declare global variables
     // OpenWeather API key
-    var APIKey = "7321de3bce923134cdfb94c3f0188e62";
+    var APIKey = "e67b980710aaa314ed9312cfc7a5a50e";
 
     // define ascii degrees symbol
     var deg = String.fromCharCode(176);
